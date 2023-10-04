@@ -1,0 +1,130 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #050509;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    color: #f5f5f5;
+}
+
+.header-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-image img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.character {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #666;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.character-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для круглых изображений артефактов */
+.artifact-image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100px; /* Фиксированная ширина для круглых изображений */
+    border-radius: 50%; /* Делаем изображение круглым */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-right: 10px; /* Добавляем небольшой отступ между изображениями */
+}
+.artifacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    /* padding 0; */
+    padding: 5px;
+    flex-direction: row;
+}
+
+.character h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #f5f5f5;
+}
+
+.character h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #f5f5f5;
+    text-align: center; /* Добавляем выравнивание по центру */
+}
+
+.character p {
+    color: #f0f8ff;
+}
+
+.character ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #f0f8ff;
+}
+
+.character ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #f0f8ff;
+}
+
+footer a {
+    color: #f0f8ff;
+}
+
+
+
+/* Добавление медиа-запросов для адаптивности на разных устройствах */
+
+@media screen and (max-width: 768px) {
+    .character {
+        padding: 10px;
+    }
+    .character img {
+        border-radius: 8px;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    .character h2 {
+        font-size: 1.2em;
+    }
+    .character h3 {
+        font-size: 1em;
+    }
+    .character p {
+        font-size: 0.9em;
+    }
+    .character ul li {
+        font-size: 0.9em;
+    }
+}
