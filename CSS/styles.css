@@ -82,7 +82,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0;
     justify-content: center;
 }
 
@@ -136,7 +135,7 @@ footer a {
 
 @media screen and (max-width: 768px) {
     .character {
-        padding: 1%;
+        padding: 8px;
     }
     .character img {
         border-radius: 8px;
@@ -155,5 +154,12 @@ footer a {
     }
     .character ul li {
         font-size: 0.9em;
+    }
+    .artifact-image{
+        width: 50%;
+        height: auto;
+    }
+    .artifact-element div {
+        width: 50%;
     }
 }
