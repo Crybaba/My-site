@@ -67,10 +67,10 @@ h2 {
 
 /* Стили для круглых изображений артефактов */
 .artifact-image {
-    width: 150px; /* Уменьшил ширину до 150px */
-    height: 150px; /* Добавил фиксированную высоту */
-    object-fit: cover;
-    overflow: hidden;
+    max-width: 100%; /* Максимальная ширина равна размеру контейнера */
+    width: auto;
+    height: 60%; /* Автоматическая высота для сохранения пропорций */
+    object-fit: cover; /* Обрезаем или масштабируем изображение, чтобы оно полностью заполнило заданные размеры */
     vertical-align: middle;
     border-radius: 50%; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -155,9 +155,5 @@ footer a {
     }
     .character ul li {
         font-size: 0.9em;
-    }
-    .artifact-image {
-        height: 50%;
-        width: auto;
     }
 }
